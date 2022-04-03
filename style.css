@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: repeating-linear-gradient(45deg, #f51142, #f511b2d6 20px);
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.ganna_nav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(0, 0, 0);
+    color: rgb(219, 12, 64);
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_1{
+    height: 50px;
+    width:50px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.logo_2{
+    height: 50px;
+    width:80px;
+}
+
+.ganna_ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.ganna_ul a{
+    text-decoration: none;
+    color: #f51142;
+}
+
+.ganna_ul  li{
+    padding: 10px;  
+    margin: 10px;
+    font-size: 1.35rem;
+    font-weight: bolder;
+}
+
+.container{
+    height: 1000px;
+    color: black;
+    /* background-color: black; */
+    display: flex;
+    width:75%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 15px;
+    background-image: url('music_bg.jpg');
+}
+
+.songItem {
+    display: flex;
+    height: 50px;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0e95e4, #3c1fdad1);
+    border-radius: 35px;
+    margin: 12px 0;
+    width:80%;
+}
+.songItem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.timestamp{
+    margin:0 10px;
+}
+.timestamp{
+    cursor: pointer;
+}
+
+.songitem_container{
+    margin-top: 50px;
+}
+
+.bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#myprogressbar{
+    width:80vw;
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left:48px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.songinfo img{
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
